@@ -591,7 +591,9 @@
                           <Component id="song_name" min="-2" pref="140" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="search" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="601" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="417" max="-2" attributes="0"/>
                           <Component id="back" pref="87" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -610,6 +612,7 @@
                       <Component id="search" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                       <Component id="db_combo" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                       <Component id="back" alignment="3" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                   <Component id="enter" min="-2" max="-2" attributes="0"/>
@@ -714,6 +717,11 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jButton1"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

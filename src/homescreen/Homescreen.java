@@ -21,6 +21,7 @@ public class Homescreen {
     public static void main(String[] args) {
         Homescreen h=new Homescreen();
         home1=new homescreen1();
+        System.out.println("hellooo");
      
     }
 

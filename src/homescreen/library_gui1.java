@@ -182,6 +182,7 @@ public class library_gui1 extends javax.swing.JFrame {
         enter = new javax.swing.JLabel();
         db_combo = new javax.swing.JComboBox();
         back = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Community Radio Transmission manager");
@@ -585,6 +586,8 @@ public class library_gui1 extends javax.swing.JFrame {
         }
     });
 
+    jButton1.setText("jButton1");
+
     javax.swing.GroupLayout search_panelLayout = new javax.swing.GroupLayout(search_panel);
     search_panel.setLayout(search_panelLayout);
     search_panelLayout.setHorizontalGroup(
@@ -603,7 +606,9 @@ public class library_gui1 extends javax.swing.JFrame {
                     .addComponent(song_name, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(search)
-                    .addGap(601, 601, 601)
+                    .addGap(111, 111, 111)
+                    .addComponent(jButton1)
+                    .addGap(417, 417, 417)
                     .addComponent(back, javax.swing.GroupLayout.DEFAULT_SIZE, 87, Short.MAX_VALUE)))
             .addGap(27, 27, 27))
     );
@@ -617,7 +622,8 @@ public class library_gui1 extends javax.swing.JFrame {
                 .addComponent(song_name, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(db_combo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton1))
             .addGap(1, 1, 1)
             .addComponent(enter)
             .addContainerGap())
@@ -897,6 +903,7 @@ if(selectedRow==-1)
     private javax.swing.JComboBox dept_combo;
     private javax.swing.JButton done;
     private javax.swing.JLabel enter;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
