@@ -11,26 +11,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
-import java.awt.Dimension;
-import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowFocusListener;
 import java.io.File;
-import java.util.Map;
-import java.util.Vector;
 import javafx.embed.swing.JFXPanel;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.scene.media.MediaView;
 import javafx.util.Duration;
 import javax.swing.JComboBox;
-import javax.swing.JSlider;
-import javax.swing.table.TableModel;
-import homescreen.MediaFile;
 public class library_gui1 extends javax.swing.JFrame {
     //Homescreen homes;
     MediaPlayer mediaPlayer=null;
@@ -750,8 +738,7 @@ public class library_gui1 extends javax.swing.JFrame {
 
     private void doneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneActionPerformed
        
-        Homescreen.call_homescreen2((DefaultTableModel)list_table.getModel());
-        this.dispose();
+       ;
         
     }//GEN-LAST:event_doneActionPerformed
 
@@ -937,7 +924,7 @@ if(selectedRow==-1)
         while(rs.next()){
             size++;
         }
-        MediaFile m=new MediaFile();
+//        MediaFile m=new MediaFile();
         rs.first();
         rs.previous();
         s=new String[size];
@@ -959,13 +946,17 @@ if(selectedRow==-1)
             s[i]=path;
             Object[] r={title,dur,artist,album,lp,cp,path};
             d.addRow(r);
-            m.add(title,album,artist,cp,lp,dur,path);
+           // m.add(title,album,artist,cp,lp,dur,path);
             i++;
             
         }
         songs_table.setModel(d);
     }
     
+    void hello()
+    {
+        
+    }
 void play_music(int r)
 {
         play.setBackground(Color.red);
