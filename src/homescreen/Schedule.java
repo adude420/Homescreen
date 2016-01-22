@@ -479,7 +479,7 @@ public class Schedule extends javax.swing.JFrame {
     void myinit()
     {
         setVisible(true);
-      
+        System.out.println("");
         tMonth=realMonth;
         tnod=nod;
         fnod=nod;

@@ -11,26 +11,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
-import java.awt.Dimension;
-import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowFocusListener;
 import java.io.File;
-import java.util.Map;
-import java.util.Vector;
 import javafx.embed.swing.JFXPanel;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.scene.media.MediaView;
 import javafx.util.Duration;
 import javax.swing.JComboBox;
-import javax.swing.JSlider;
-import javax.swing.table.TableModel;
-import homescreen.MediaFile;
 public class library_gui1 extends javax.swing.JFrame {
     //Homescreen homes;
     MediaPlayer mediaPlayer=null;
@@ -182,8 +170,6 @@ public class library_gui1 extends javax.swing.JFrame {
         enter = new javax.swing.JLabel();
         db_combo = new javax.swing.JComboBox();
         back = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jRadioButton1 = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Community Radio Transmission manager");
@@ -456,7 +442,7 @@ public class library_gui1 extends javax.swing.JFrame {
             .addComponent(delete_all, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
             .addComponent(done, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addContainerGap())
+            .addContainerGap(138, Short.MAX_VALUE))
     );
 
     javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -484,11 +470,11 @@ public class library_gui1 extends javax.swing.JFrame {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(selection_pane, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel3Layout.createSequentialGroup()
-                    .addGap(161, 161, 161)
-                    .addComponent(delete_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel3Layout.createSequentialGroup()
                     .addGap(43, 43, 43)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addGap(34, 34, 34)
+                    .addComponent(delete_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addContainerGap(94, Short.MAX_VALUE))
     );
 
@@ -587,10 +573,6 @@ public class library_gui1 extends javax.swing.JFrame {
         }
     });
 
-    jButton1.setText("jButton1");
-
-    jRadioButton1.setText("jRadioButton1");
-
     javax.swing.GroupLayout search_panelLayout = new javax.swing.GroupLayout(search_panel);
     search_panel.setLayout(search_panelLayout);
     search_panelLayout.setHorizontalGroup(
@@ -609,11 +591,7 @@ public class library_gui1 extends javax.swing.JFrame {
                     .addComponent(song_name, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(search)
-                    .addGap(18, 18, 18)
-                    .addComponent(jRadioButton1)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(jButton1)
-                    .addGap(417, 417, 417)
+                    .addGap(603, 603, 603)
                     .addComponent(back, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)))
             .addGap(27, 27, 27))
     );
@@ -627,9 +605,7 @@ public class library_gui1 extends javax.swing.JFrame {
                 .addComponent(song_name, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(db_combo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(jButton1)
-                .addComponent(jRadioButton1))
+                .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGap(1, 1, 1)
             .addComponent(enter)
             .addContainerGap())
@@ -762,8 +738,7 @@ public class library_gui1 extends javax.swing.JFrame {
 
     private void doneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneActionPerformed
        
-        Homescreen.call_homescreen2((DefaultTableModel)list_table.getModel());
-        this.dispose();
+       ;
         
     }//GEN-LAST:event_doneActionPerformed
 
@@ -909,12 +884,10 @@ if(selectedRow==-1)
     private javax.swing.JComboBox dept_combo;
     private javax.swing.JButton done;
     private javax.swing.JLabel enter;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JTable list_table;
     private javax.swing.JButton next;
     private javax.swing.JButton play;
@@ -951,7 +924,7 @@ if(selectedRow==-1)
         while(rs.next()){
             size++;
         }
-        MediaFile m=new MediaFile();
+//        MediaFile m=new MediaFile();
         rs.first();
         rs.previous();
         s=new String[size];
@@ -973,13 +946,17 @@ if(selectedRow==-1)
             s[i]=path;
             Object[] r={title,dur,artist,album,lp,cp,path};
             d.addRow(r);
-            m.add(title,album,artist,cp,lp,dur,path);
+           // m.add(title,album,artist,cp,lp,dur,path);
             i++;
             
         }
         songs_table.setModel(d);
     }
     
+    void hello()
+    {
+        
+    }
 void play_music(int r)
 {
         play.setBackground(Color.red);
