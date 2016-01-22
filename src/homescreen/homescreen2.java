@@ -157,7 +157,6 @@ public class homescreen2 extends javax.swing.JFrame {
         jDialog1 = new javax.swing.JDialog();
         back_panel = new javax.swing.JPanel();
         broadcast_panel = new javax.swing.JPanel();
-        mode = new javax.swing.JButton();
         pause = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
@@ -165,7 +164,6 @@ public class homescreen2 extends javax.swing.JFrame {
         current = new javax.swing.JTable();
         play = new javax.swing.JButton();
         next = new javax.swing.JButton();
-        edit = new javax.swing.JButton();
         duration_label = new javax.swing.JLabel();
         playlist_panel = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -191,13 +189,6 @@ public class homescreen2 extends javax.swing.JFrame {
         back_panel.setBackground(new java.awt.Color(0, 255, 204));
 
         broadcast_panel.setBackground(new java.awt.Color(0, 0, 0));
-
-        mode.setText("mode");
-        mode.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                modeActionPerformed(evt);
-            }
-        });
 
         pause.setText("Pause");
         pause.addActionListener(new java.awt.event.ActionListener() {
@@ -230,13 +221,6 @@ public class homescreen2 extends javax.swing.JFrame {
             }
         });
 
-        edit.setText("EDIT SONG");
-        edit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                editActionPerformed(evt);
-            }
-        });
-
         duration_label.setForeground(new java.awt.Color(255, 255, 51));
         duration_label.setText("dur");
 
@@ -250,15 +234,12 @@ public class homescreen2 extends javax.swing.JFrame {
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 560, Short.MAX_VALUE)
                     .addGroup(broadcast_panelLayout.createSequentialGroup()
-                        .addComponent(mode)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(69, 69, 69)
                         .addComponent(pause)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(play)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(next)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(edit)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(duration_label, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
@@ -268,11 +249,9 @@ public class homescreen2 extends javax.swing.JFrame {
             .addGroup(broadcast_panelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(broadcast_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(mode, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pause, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(play, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(next, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(edit, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(duration_label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 255, Short.MAX_VALUE)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -402,10 +381,6 @@ public class homescreen2 extends javax.swing.JFrame {
         current.setRowSelectionInterval(selectedRow+1,selectedRow+1 );
     }//GEN-LAST:event_nextActionPerformed
 
-    private void modeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modeActionPerformed
-       
-    }//GEN-LAST:event_modeActionPerformed
-
     private void log_outActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_log_outActionPerformed
       Homescreen.call_homescreen1();
        dispose();
@@ -415,10 +390,6 @@ public class homescreen2 extends javax.swing.JFrame {
         setVisible(false);
        Homescreen.call_library(1);
     }//GEN-LAST:event_pick_from_libraryActionPerformed
-
-    private void editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_editActionPerformed
 
     private void view_scheduleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_view_scheduleActionPerformed
         // TODO add your handling code here:
@@ -491,14 +462,12 @@ public class homescreen2 extends javax.swing.JFrame {
     private javax.swing.JPanel broadcast_panel;
     private javax.swing.JTable current;
     private javax.swing.JLabel duration_label;
-    private javax.swing.JButton edit;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JButton log_out;
-    private javax.swing.JButton mode;
     private javax.swing.JButton new_package;
     private javax.swing.JButton next;
     private javax.swing.JButton pause;

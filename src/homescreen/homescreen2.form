@@ -92,15 +92,12 @@
                           <Component id="jScrollPane3" alignment="1" max="32767" attributes="0"/>
                           <Component id="jScrollPane4" alignment="0" pref="560" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="mode" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                               <Component id="pause" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="play" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="next" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="edit" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="duration_label" min="-2" pref="71" max="-2" attributes="0"/>
                           </Group>
@@ -114,11 +111,9 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="mode" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                           <Component id="pause" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
                           <Component id="play" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                           <Component id="next" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="edit" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                           <Component id="duration_label" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="255" max="32767" attributes="0"/>
@@ -131,14 +126,6 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="mode">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="mode"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modeActionPerformed"/>
-              </Events>
-            </Component>
             <Component class="javax.swing.JButton" name="pause">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Pause"/>
@@ -195,14 +182,6 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nextActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JButton" name="edit">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="EDIT SONG"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="duration_label">
